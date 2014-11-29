@@ -1,0 +1,17 @@
+---
+- alert_color: 'OFF'
+  alert_level: 'auto'
+  alert_tone: 'off'
+  attenuate: 'off'
+  audio_type: analog
+  dcs: all
+  frequency: '119.3000'
+  lockout: unlock
+  modulation: AM
+  name: ' SAMPLE CHN 2'
+  p25nac: ''
+  pattern: 'on'
+  priority: 'off'
+  tag: '333'
+  tone_lockout: unlock
+  vol_offset: '0'

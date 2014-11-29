@@ -1,0 +1,10 @@
+---
+auto_gain_control: {a_gain: '6', a_ref: '0', a_res: '0', d_gain: '0', d_res: '0'}
+backlight: {color: YELLOW, dimmer: high, event: infinite}
+battery_info: {bat_save: 'off', charge_time: '16'}
+com_port: {baudrate: '57600'}
+key_beep: {level: '99', lock: 'off', safe: 'off'}
+lcd_contrast: {contrast: '8'}
+opening_message: [0, Uniden Bearcat, BCD396XT, Digital Trunking, Dynamic Scanning]
+priority_mode: {interval: '2', max_chan: '100', pri_mode: 'off'}
+scanner_option: {ch_log: 'off', disp_mode: '1', disp_uid: 'on', g_att: 'off', p25_lpf: 'on'}

@@ -1,0 +1,21 @@
+---
+band_scope_system: {frequency: '119.1000', step: '50.0'}
+bcast_screen_band:
+  1: {limit_h: '56.5000', limit_l: '48.5000'}
+  2: {limit_h: '76.0000', limit_l: '72.0000'}
+  3: {limit_h: '230.0000', limit_l: '215.0000'}
+  4: {limit_h: '790.0000', limit_l: '758.0000'}
+close_call: {band: '0000111', beep: '3', color: MAGENTA, hold: '1', level: '3'}
+custom_search:
+  0: {limit_h: '118.0000', limit_l: '120.0000', lockout: unlock, modulation: AM,
+    name: 'TEST1'}
+  9: {agc_analog: 'on', agc_digital: 'on', attenuation: 'off', cch: 'off', delay: '-10',
+    hold: '2', limit_h: '354.0000', limit_l: '353.9750', lockout: lockout, modulation: AM,
+    name: '354_359', number_tag: '999', p25waiting: '200', quick_key: '99', start_key: .,
+    step: '50.0'}
+service_search:
+  1: {agc_analog: 'on', agc_digital: 'on', attenuation: 'on', delay: '5', hold: '1',
+    lockout: unlock, number_tag: 222, p25waiting: '200', quick_key: ., start_key: .}
+srch_close_call: {agc_analog: 'off', agc_digital: 'off', attenuate: 'off', bscreen: '1000000000000000',
+  code_srch: all, delay: '5', max_store: '100', modulation: AM, p25waiting: '200',
+  repeater: 'off'}

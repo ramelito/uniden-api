@@ -1,0 +1,148 @@
+---
+band_scope_system: {frequency: '118.1000', max_hold: '0', span: 20M, step: '25.0'}
+bcast_screen_band:
+  0: {limit_h: '0.0000', limit_l: '0.0000'}
+  1: {limit_h: '56.5000', limit_l: '48.5000'}
+  2: {limit_h: '76.0000', limit_l: '72.0000'}
+  3: {limit_h: '230.0000', limit_l: '215.0000'}
+  4: {limit_h: '790.0000', limit_l: '758.0000'}
+  5: {limit_h: '0.0000', limit_l: '0.0000'}
+  6: {limit_h: '0.0000', limit_l: '0.0000'}
+  7: {limit_h: '0.0000', limit_l: '0.0000'}
+  8: {limit_h: '0.0000', limit_l: '0.0000'}
+  9: {limit_h: '0.0000', limit_l: '0.0000'}
+close_call: {band: '0000110', beep: '5', color: YELLOW, hold: '1', level: '3', lockout: unlock,
+  mode: dnd, number_tag: '899', override: 'off', pattern: slow, pause: '3', quick_key: '89'}
+custom_search:
+  0: {agc_analog: 'off', agc_digital: 'off', attenuation: 'on', cch: 'off', delay: '-5',
+    hold: '0', limit_h: '363.9750', limit_l: '359.0000', lockout: unlock, modulation: AM,
+    name: '359_364', number_tag: '900', p25waiting: '400', quick_key: '90', start_key: .,
+    step: '25.0'}
+  1: {agc_analog: 'off', agc_digital: 'off', attenuation: 'off', cch: 'off', delay: '2',
+    hold: '0', limit_h: '435.0000', limit_l: '434.0000', lockout: unlock, modulation: AM,
+    name: '434', number_tag: '901', p25waiting: '400', quick_key: '91', start_key: .,
+    step: '6.25'}
+  2: {agc_analog: 'off', agc_digital: 'off', attenuation: 'off', cch: 'off', delay: '2',
+    hold: '0', limit_h: '155.0000', limit_l: '151.0000', lockout: unlock, modulation: NFM,
+    name: '435', number_tag: '902', p25waiting: '400', quick_key: '92', start_key: .,
+    step: '12.5'}
+  3: {agc_analog: 'off', agc_digital: 'off', attenuation: 'off', cch: 'off', delay: '2',
+    hold: '0', limit_h: '154.0000', limit_l: '150.0000', lockout: unlock, modulation: NFM,
+    name: '438', number_tag: '903', p25waiting: '400', quick_key: '93', start_key: .,
+    step: '12.5'}
+  4: {agc_analog: 'off', agc_digital: 'off', attenuation: 'off', cch: 'off', delay: '2',
+    hold: '0', limit_h: '48.0000', limit_l: '39.0000', lockout: unlock, modulation: NFM,
+    name: '39_48', number_tag: '904', p25waiting: '400', quick_key: '94', start_key: .,
+    step: '12.5'}
+  5: {agc_analog: 'off', agc_digital: 'off', attenuation: 'on', cch: 'off', delay: '-5',
+    hold: '0', limit_h: '322.9750', limit_l: '318.0000', lockout: unlock, modulation: AM,
+    name: '318_323', number_tag: '905', p25waiting: '400', quick_key: '95', start_key: .,
+    step: '25.0'}
+  6: {agc_analog: 'off', agc_digital: 'off', attenuation: 'on', cch: 'off', delay: '-5',
+    hold: '0', limit_h: '327.9750', limit_l: '323.0000', lockout: unlock, modulation: AM,
+    name: '323_328', number_tag: '906', p25waiting: '400', quick_key: '96', start_key: .,
+    step: '25.0'}
+  7: {agc_analog: 'off', agc_digital: 'off', attenuation: 'on', cch: 'off', delay: '-5',
+    hold: '0', limit_h: '348.9750', limit_l: '344.0000', lockout: unlock, modulation: AM,
+    name: '344_349', number_tag: '907', p25waiting: '400', quick_key: '97', start_key: .,
+    step: '25.0'}
+  8: {agc_analog: 'off', agc_digital: 'off', attenuation: 'on', cch: 'off', delay: '-5',
+    hold: '0', limit_h: '353.9750', limit_l: '349.0000', lockout: unlock, modulation: AM,
+    name: '349_354', number_tag: '908', p25waiting: '400', quick_key: '98', start_key: .,
+    step: '25.0'}
+  9: {agc_analog: 'off', agc_digital: 'off', attenuation: 'on', cch: 'off', delay: '-5',
+    hold: '0', limit_h: '354.0000', limit_l: '353.9750', lockout: unlock, modulation: AM,
+    name: '354_359', number_tag: '909', p25waiting: '400', quick_key: '99', start_key: .,
+    step: '25.0'}
+custom_search_group: ['0', '1', '1', '1', '1', '1', '1', '1', '1', '1']
+global_lout_frqs: ['-1']
+mot_band_plan:
+  0:
+    lower: [0, '', '', '', '', '', '']
+    mot_type: STD
+    offset: [0, '', '', '', '', '', '']
+    step: [0, '', '', '', '', '', '']
+    upper: [0, '', '', '', '', '', '']
+  1:
+    lower: [0, '', '', '', '', '', '']
+    mot_type: STD
+    offset: [0, '', '', '', '', '', '']
+    step: [0, '', '', '', '', '', '']
+    upper: [0, '', '', '', '', '', '']
+  2:
+    lower: [0, '', '', '', '', '', '']
+    mot_type: STD
+    offset: [0, '', '', '', '', '', '']
+    step: [0, '', '', '', '', '', '']
+    upper: [0, '', '', '', '', '', '']
+  3:
+    lower: [0, '', '', '', '', '', '']
+    mot_type: STD
+    offset: [0, '', '', '', '', '', '']
+    step: [0, '', '', '', '', '', '']
+    upper: [0, '', '', '', '', '', '']
+  4:
+    lower: [0, '', '', '', '', '', '']
+    mot_type: STD
+    offset: [0, '', '', '', '', '', '']
+    step: [0, '', '', '', '', '', '']
+    upper: [0, '', '', '', '', '', '']
+  5:
+    lower: [0, '', '', '', '', '', '']
+    mot_type: STD
+    offset: [0, '', '', '', '', '', '']
+    step: [0, '', '', '', '', '', '']
+    upper: [0, '', '', '', '', '', '']
+  6:
+    lower: [0, '', '', '', '', '', '']
+    mot_type: STD
+    offset: [0, '', '', '', '', '', '']
+    step: [0, '', '', '', '', '', '']
+    upper: [0, '', '', '', '', '', '']
+  7:
+    lower: [0, '', '', '', '', '', '']
+    mot_type: STD
+    offset: [0, '', '', '', '', '', '']
+    step: [0, '', '', '', '', '', '']
+    upper: [0, '', '', '', '', '', '']
+  8:
+    lower: [0, '', '', '', '', '', '']
+    mot_type: STD
+    offset: [0, '', '', '', '', '', '']
+    step: [0, '', '', '', '', '', '']
+    upper: [0, '', '', '', '', '', '']
+  9:
+    lower: [0, '', '', '', '', '', '']
+    mot_type: STD
+    offset: [0, '', '', '', '', '', '']
+    step: [0, '', '', '', '', '', '']
+    upper: [0, '', '', '', '', '', '']
+search_key: [0, CUSTOM_1, PublicSafety, B_SCOPE]
+service_search:
+  1: {agc_analog: 'off', agc_digital: 'off', attenuation: 'off', delay: '2', hold: '2',
+    lockout: lockout, number_tag: NONE, p25waiting: '400', quick_key: ., start_key: .}
+  2: {agc_analog: 'off', agc_digital: 'off', attenuation: 'off', delay: '2', hold: '2',
+    lockout: lockout, number_tag: NONE, p25waiting: '400', quick_key: ., start_key: .}
+  3: {agc_analog: 'off', agc_digital: 'off', attenuation: 'off', delay: '2', hold: '2',
+    lockout: lockout, number_tag: NONE, p25waiting: '400', quick_key: ., start_key: .}
+  4: {agc_analog: 'off', agc_digital: 'off', attenuation: 'off', delay: '2', hold: '2',
+    lockout: lockout, number_tag: NONE, p25waiting: '400', quick_key: ., start_key: .}
+  5: {agc_analog: 'off', agc_digital: 'off', attenuation: 'off', delay: '2', hold: '2',
+    lockout: lockout, number_tag: NONE, p25waiting: '400', quick_key: ., start_key: .}
+  6: {agc_analog: 'off', agc_digital: 'off', attenuation: 'off', delay: '2', hold: '2',
+    lockout: lockout, number_tag: NONE, p25waiting: '400', quick_key: ., start_key: .}
+  7: {agc_analog: 'off', agc_digital: 'off', attenuation: 'off', delay: '2', hold: '2',
+    lockout: lockout, number_tag: NONE, p25waiting: '400', quick_key: ., start_key: .}
+  8: {agc_analog: 'off', agc_digital: 'off', attenuation: 'off', delay: '2', hold: '2',
+    lockout: lockout, number_tag: NONE, p25waiting: '400', quick_key: ., start_key: .}
+  9: {agc_analog: 'off', agc_digital: 'off', attenuation: 'off', delay: '2', hold: '2',
+    lockout: lockout, number_tag: NONE, p25waiting: '400', quick_key: ., start_key: .}
+  11: {agc_analog: 'off', agc_digital: 'off', attenuation: 'off', delay: '2', hold: '2',
+    lockout: lockout, number_tag: NONE, p25waiting: '400', quick_key: ., start_key: .}
+  12: {agc_analog: 'off', agc_digital: 'off', attenuation: 'off', delay: '2', hold: '2',
+    lockout: lockout, number_tag: NONE, p25waiting: '400', quick_key: ., start_key: .}
+  15: {agc_analog: 'off', agc_digital: 'off', attenuation: 'off', delay: '2', hold: '2',
+    lockout: lockout, number_tag: NONE, p25waiting: '400', quick_key: ., start_key: .}
+srch_close_call: {agc_analog: 'on', agc_digital: 'off', attenuate: 'off', bscreen: '0000000000000000',
+  code_srch: all, delay: '2', max_store: '100', modulation: AUTO, p25waiting: '200',
+  repeater: 'off'}

@@ -1,0 +1,12 @@
+- name: SAMPLE P25
+  type: p25 standard
+  protected: 'off'
+  groups:
+  - name: SAMPLE GRP
+    type: T
+    tgids:
+    - {name: ' SAMPLE TGID', tgid: '100'}
+  sites:
+  - name: SAMPLE SITE
+    trunk_frqs:
+    - {frequency: '450.1250'}

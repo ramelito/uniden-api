@@ -1,0 +1,11 @@
+---
+- name: SYS MIN
+  type: conventional
+  protected: 'off'
+  groups:
+  - type: C
+    name: GRP MIN
+    channels:
+    - frequency: '118.2000'
+      modulation: AM
+      name: ' CHN MIN'

@@ -1,0 +1,67 @@
+- agc_analog: 'off'
+  agc_digital: 'off'
+  alert: ''
+  alert_color: ''
+  alert_lvl: auto
+  custom_fmap: ''
+  delay: '0'
+  edacs_format: 'decimal'
+  end_code: 'ignore'
+  fleet_map: ''
+  groups:
+  - gps: 'off'
+    latitude: 00000000N
+    lockout: unlock
+    longitude: 000000000W
+    name: SAMPLE GRP
+    quick_key: '0'
+    range: '20'
+    tgids:
+    - {alert_color: 'OFF', alert_level: '0', alert_tone: '0', audio_type: all, lockout: unlock,
+      name: ' SAMPLE TGID', pattern: 'on', priority: 'off', tag: '60', tgid: '100', vol_offset: '0'}
+    type: T
+  grp_lockout: ['1', '0', '0', '0', '0', '0', '0', '0', '0', '0']
+  hold: ''
+  id_format: decimal
+  id_mode: scan
+  lockout: unlock
+  nac: ''
+  name: SAMPLE P25
+  p25_waiting: ''
+  pattern: 'on'
+  priority: 'off'
+  protected: 'off'
+  quick_key: ''
+  search_lockout: ['-1']
+  sites:
+  - attenuation: 'off'
+    band_type: ''
+    cch: 'on' 
+    edacs: ''
+    gps: 'off'
+    hold: '0'
+    latitude: 00000000N
+    lockout: unlock
+    longitude: 000000000W
+    modulation: ''
+    name: SAMPLE SITE
+    p25_bp:
+      base_freq: [A2510A2, '0', 53EC600, 19F0A00, 1EA12FC, '0', '0', '0', '0', '0',
+        '0', '0', '0', '0', '0', '0']
+      spacing_freq: ['32', '0', '32', '32', '32', '0', '0', '0', '0', '0', '0', '0',
+        '0', '0', '0', '0']
+    p25_waiting: ''
+    quick_key: '33'
+    range: '0'
+    start_key: '1'
+    trunk_frqs:
+    - {frequency: '450.1250', lcn: '', lockout: unlock, tag: '', vol_offset: ''}
+  start_key: ''
+  status: ignore
+  tag: NONE
+  tgids_lockout: ['1441', '1463', '1422', '1473', '1443', '1431', '1433', '1472',
+    '1423', '1493', '1492', '1453', '1462', '1491', '1641', '1495', '1442', '1432',
+    '1461', '1451', '1452', '1421', '1481', '1402', '1485', '1483', '1406', '502',
+    '901', '203', '101', '201', '904', '705', '804', '805', '305', '902', '204', '403',
+    '402', '1417', '1471', '-1']
+  type: p25 standard

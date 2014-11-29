@@ -1,0 +1,27 @@
+---
+- name: SAMPLE_SYS
+  type: conventional
+  quick_key: '3'
+  hold: '0'
+  lockout: unlock
+  delay: '2'
+  start_key: .
+  tag: '3'
+  agc_analog: 'off'
+  agc_digital: 'off'
+  p25_waiting: '400'
+  protected: 'off'
+  groups:
+  - type: C
+    name: SAMPLE_GRP
+    quick_key: '1'
+    lockout: unlock
+    latitude: 45000000N
+    longitude: 123000000W
+    range: '0'
+    gps: 'off'
+    channels:
+    - {alert_color: 'OFF', alert_level: 'auto', alert_tone: 'off', attenuate: 'off', audio_type: analog,
+      dcs: all, frequency: '118.2000', lockout: unlock, modulation: AM, name: ' SAMPLE CHN', 
+      p25nac: '', pattern: 'on', priority: 'off', tag: '301', tone_lockout: unlock,
+      vol_offset: '0'}
