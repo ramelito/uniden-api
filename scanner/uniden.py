@@ -707,7 +707,7 @@ class UnidenScanner:
 		   tuple(p4),tuple(p5),tuple(p6),tuple(p7),
 		   tuple(p8),tuple(p9)]
 
-		self.quick_lout=tuple(map(zero_to_head,l))
+		self.quick_lockout=tuple(map(zero_to_head,l))
 
 		if not self.exit_program_mode(): return 0
 
@@ -719,7 +719,7 @@ class UnidenScanner:
 
 		if not self.isProgramMode: self.enter_program_mode()
 
-		l=list(self.quick_lout)
+		l=list(self.quick_lockout)
 		l=(map(zero_to_tail,l))
 		l=[''.join(t) for t in l]
 		pages=','.join(l)
@@ -732,7 +732,7 @@ class UnidenScanner:
 			self.logger.error('set_scan_settings(): failed to set quick system lockout list.')
 			return 0
 
-		for system in self.systems: system.set_data()
+		for system in self.systems.values(): system.set_data()
 
 		if not self.exit_program_mode(): return 0
 
@@ -1136,7 +1136,7 @@ class System:
 		self.p25nac='search'
 		self.pri_id_scan='0'
 
-		self.quick_lout=()
+		self.quick_lockout=()
 
 		self.groups={}
 		self.sites={}
@@ -1281,7 +1281,7 @@ class System:
 			return 0
 		
 		(qgl,s) = res.split(',')
-		self.quick_lout=zero_to_head(tuple(s))
+		self.quick_lockout=zero_to_head(tuple(s))
 
 		self.get_lockout_tgids()
 
@@ -1327,7 +1327,7 @@ class System:
 
 			for s in self.sites.values(): s.set_data() 
 
-		t=zero_to_tail(self.quick_lout)
+		t=zero_to_tail(self.quick_lockout)
 		s=''.join(t)
 		cmd = ','.join(['QGL',self.sys_index,s])
 
@@ -1412,8 +1412,10 @@ class System:
 		if self.emgl: level=human_alert_tlevels[self.emgl]
                 sk=self.start_key
                 tag=self.number_tag
-                agca=human_onoff[self.agc_analog]
-                agcd=human_onoff[self.agc_digital]
+                if self.agc_analog!='': agca=human_onoff[self.agc_analog]
+		else: agca=''
+                if self.agc_digital!='': agcd=human_onoff[self.agc_digital]
+		else: agcd=''
                 pw=self.p25waiting
                 pr=human_onoff[self.protect]
 
@@ -1425,7 +1427,7 @@ class System:
 		if self.emg_pattern: ep=human_altp[self.emg_pattern]
 		if self.pri_id_scan: pis=human_onoff[self.pri_id_scan]
 
-		ql=list(self.quick_lout)
+		ql=list(self.quick_lockout)
 		lt=list(self.lout_tgids)
 		slt=list(self.srch_lout_tgids)
 
@@ -1465,7 +1467,7 @@ class System:
                 self.start_key = str(start_key)
                 self.number_tag = str(tag)
                 self.p25waiting = str(p25_waiting)
-		self.quick_lout = tuple(grp_lockout)
+		self.quick_lockout = tuple(grp_lockout)
 
 		self.emg=str(alert)
 		self.fmap=str(fleet_map)
@@ -2377,7 +2379,8 @@ class Channel:
 		lout=human_lout[self.lout]
 		pri=human_onoff[self.pri]
 		att=human_onoff[self.att]
-		audiot=human_audiot[self.audio_type]
+		if self.audio_type!='': audiot=human_audiot[self.audio_type]
+		else: audiot=''
 		altp=human_altp[self.alt_pattern]
 		vol=self.vol_offset
 		level=human_alert_tlevels[self.altl]
