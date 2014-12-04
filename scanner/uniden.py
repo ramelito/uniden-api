@@ -1389,7 +1389,7 @@ class System:
 
 		"""Shows brief system data: name, type, groups and sites."""
 
-		print ('Index: %s\tName: %s\tType: %s') % (self.sys_index,self.name,self.sys_type)
+		print ('Index: %s\tName: %s\tType: %s\tLockout: %s') % (self.sys_index,self.name,self.sys_type,human_lout[self.lout])
 		for i in sorted(self.groups): self.groups[i].show_brief()
 		for i in sorted(self.sites): self.sites[i].show_brief()
 
@@ -1795,7 +1795,7 @@ class Group:
 
                 """Shows brief group data: index, name, channels or tgids."""
 
-		print ('\tIndex: %s\tName: %s') % (self.grp_index,self.name)
+		print ('\tIndex: %s\tName: %s\tLockout: %s') % (self.grp_index,self.name,human_lout[self.lout])
 		for i in sorted(self.channels): self.channels[i].show_brief()
 		for i in sorted(self.tgids): self.tgids[i].show_brief()
 
@@ -2123,7 +2123,7 @@ class Site:
 
 		"""Shows brief site data: index, name and trunk frequencies."""
 
-		print ('\tIndex: %s\tName: %s') % (self.sit_index,self.name)
+		print ('\tIndex: %s\tName: %s\t Lockout: %s') % (self.sit_index,self.name,human_lout[self.lout])
 		for i in sorted(self.trunk_frqs): self.trunk_frqs[i].show_brief()
 
 
@@ -2366,8 +2366,8 @@ class Channel:
 
 		"""Shows brief channel data: index, name and frequency."""
 
-		print ('\t\tIndex: %s\tName: %s\tFrequency: %s') % (self.chn_index,self.name,
-								frq_from_scanner(self.frq))
+		print ('\t\tIndex: %s\tName: %s\tFrequency: %s\t Lockout: %s') % (self.chn_index,self.name,
+								frq_from_scanner(self.frq),human_lout[self.lout])
 
 	def dump(self):
 
@@ -2661,7 +2661,7 @@ class TalkGroupID():
 
 		"""Shows brief TGID data."""
 
-		print ('\t\tIndex: %s\tName: %s\tTGID: %s') % (self.chn_index,self.name,self.tgid)
+		print ('\t\tIndex: %s\tName: %s\tTGID: %s\tLockout:%s') % (self.chn_index,self.name,self.tgid,human_lout[self.lout])
 
 	def dump(self):
 
